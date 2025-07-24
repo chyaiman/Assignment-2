@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f6f8ff;
+}
+header {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+ul {
+  display: flex;
+  gap: 48px;
+}
+
+.banner-container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    gap: 185px;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-wrap: nowrap;
+  }
+
+  .banner-container {
+    flex-direction: column-reverse;
+    align-items: normal;
+    /* justify-content: right; */
+  }
+
+  .banner-content {
+    margin-top: 40px;
+    margin-left: 16px;
+  }
+}
