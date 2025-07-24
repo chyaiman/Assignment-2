@@ -45,4 +45,7 @@ ul {
     margin-top: 40px;
     margin-left: 16px;
   }
+  .all-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
