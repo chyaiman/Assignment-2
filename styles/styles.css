@@ -4,7 +4,7 @@ body {
   background-color: #f6f8ff;
 }
 header {
-  max-width: 1250px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@ nav {
   margin-top: 30px;
 }
 
-ul {
+.navbar > ul {
   display: flex;
   gap: 48px;
 }
@@ -27,7 +27,38 @@ ul {
   align-items: center;
 }
 
+.lover-part {
+  position: relative; /* allows absolute children to be positioned relative to this */
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.lover-images {
+  position: relative;
+}
+
+.second-image {
+  position: absolute;
+  top: -140px;
+  left: 340px;
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+.lover-lists {
+  width: 50%;
+}
+
 @media screen and (max-width: 576px) {
+  .cards-section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .new-class {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
   nav {
     gap: 185px;
     margin-left: 16px;
@@ -40,6 +71,9 @@ ul {
     align-items: normal;
     /* justify-content: right; */
   }
+  .banner-image {
+    width: 100%;
+  }
 
   .banner-content {
     margin-top: 40px;
@@ -49,5 +83,41 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 16px;
     margin-right: 15px;
+  }
+
+  main {
+    max-width: 366px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .lover-part {
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .lover-images {
+    width: 100%;
+  }
+
+  .second-image {
+    display: none;
+  }
+  .lover-lists > ul > li {
+    width: 361px;
+  }
+  .lover-lists > h1 {
+    width: 361px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .lover-lists > ul {
+    margin-left: 25px;
+    font-size: 14px;
+  }
+  .lover-lists > ul > li {
+    width: 340px;
   }
 }
