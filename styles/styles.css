@@ -63,6 +63,12 @@ nav {
   grid-row: span 2;
 }
 
+.second-part > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
 @media screen and (max-width: 576px) {
   .cards-section {
     max-width: 600px;
@@ -161,9 +167,36 @@ nav {
     width: 361px;
   }
 
+  footer {
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .deals-title-part > p {
     max-width: 361px;
     font-size: 14px;
     margin-bottom: 51px;
+  }
+  .subscribe-button input {
+    width: 218px;
+  }
+
+  .subscribe-button > button {
+    width: 103px;
+  }
+  .footer-title h1 {
+    font-size: 20px;
+  }
+  .end-part {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 20px;
+  }
+  .second-part > ul {
+    display: flex;
+    flex-direction: column;
   }
 }
