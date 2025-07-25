@@ -88,7 +88,8 @@ nav {
 
   .banner-container {
     flex-direction: column-reverse;
-    align-items: normal;
+    align-items: center;
+    width: 100%;
     /* justify-content: right; */
   }
   .banner-image {
@@ -98,6 +99,7 @@ nav {
   .banner-content {
     margin-top: 40px;
     margin-left: 16px;
+    text-align: left;
   }
   .all-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -106,7 +108,7 @@ nav {
   }
 
   main {
-    max-width: 366px;
+    max-width: 361px;
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -118,6 +120,9 @@ nav {
   }
   .lover-images {
     width: 100%;
+  }
+  .first-image {
+    width: 358px;
   }
 
   .second-image {
@@ -144,6 +149,9 @@ nav {
   .images-part {
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
   }
 
   .spanned > h1 {
@@ -158,18 +166,18 @@ nav {
   }
 
   .images-part > div:nth-child(2) {
-    order: 3; /* Zabo should come last */
+    order: 3;
     width: 361px;
   }
 
   .images-part > div:nth-child(3) {
-    order: 2; /* Ana should come second */
+    order: 2;
     width: 361px;
   }
 
   footer {
     /* width: 100%; */
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -199,5 +207,10 @@ nav {
   .second-part > ul {
     display: flex;
     flex-direction: column;
+  }
+
+  .deals-title-part > p {
+    width: 336px;
+    font-size: 14px;
   }
 }
