@@ -169,6 +169,7 @@ nav {
 
   footer {
     /* width: 100%; */
+    max-width: 393px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -190,6 +191,7 @@ nav {
     font-size: 20px;
   }
   .end-part {
+    max-width: 393px;
     display: flex;
     flex-direction: column;
     gap: 50px;
